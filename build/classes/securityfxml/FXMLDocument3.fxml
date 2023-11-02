@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="417.0" prefWidth="536.0" stylesheets="@StyleSheet.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="securityfxml.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="417.0" fitWidth="536.0">
+         <image>
+            <Image url="@image.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="button2" layoutX="193.0" layoutY="23.0" mnemonicParsing="false" onAction="#fileChooser2" prefHeight="134.0" prefWidth="150.0" styleClass="third-button" stylesheets="@StyleSheet.css">
+         <graphic>
+            <ImageView fitHeight="103.0" fitWidth="102.0">
+               <image>
+                  <Image url="@files-and-folders.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="134.0" layoutX="43.0" layoutY="244.0" opacity="0.2" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="134.0" layoutX="343.0" layoutY="244.0" opacity="0.2" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+      <Button fx:id="button" layoutX="49.0" layoutY="251.0" mnemonicParsing="false" onAction="#encryptText" prefHeight="120.0" prefWidth="138.0" styleClass="first-button" stylesheets="@StyleSheet.css" text="Encrypt" />
+      <Button fx:id="button1" layoutX="349.0" layoutY="251.0" mnemonicParsing="false" onAction="#decryptText" prefHeight="120.0" prefWidth="138.0" styleClass="second-button" stylesheets="@StyleSheet.css" text="Decrypt" />
+      <Label fx:id="singleFile2" layoutX="176.0" layoutY="172.0" prefHeight="20.0" prefWidth="184.0" stylesheets="@StyleSheet.css" />
+   </children>
+</AnchorPane>
